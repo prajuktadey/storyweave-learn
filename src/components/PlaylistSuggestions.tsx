@@ -34,11 +34,11 @@ export const PlaylistSuggestions = ({ playlist, onPlayTrack, onShuffle }: Playli
           <div className="flex justify-center gap-3">
             <Button variant="hero" size="lg">
               <Play className="w-5 h-5 mr-2" />
-              Play All
+              play all
             </Button>
             <Button variant="outline" onClick={onShuffle}>
               <Shuffle className="w-4 h-4 mr-2" />
-              Shuffle
+              shuffle
             </Button>
           </div>
 
@@ -78,20 +78,20 @@ export const PlaylistSuggestions = ({ playlist, onPlayTrack, onShuffle }: Playli
           {/* Streaming Links */}
           <div className="text-center space-y-4 pt-6 border-t border-border">
             <p className="text-sm text-muted-foreground">
-              Open this playlist in your favorite music app
+              open this playlist in your favorite music app
             </p>
             <div className="flex justify-center gap-3 flex-wrap">
               <Button variant="outline" size="sm">
-                <span className="text-green-500 mr-2">♪</span>
-                Spotify
+                <span className="text-green-500 mr-2">s</span>
+                spotify
               </Button>
               <Button variant="outline" size="sm">
-                <span className="text-red-500 mr-2">▶</span>
-                YouTube
+                <span className="text-red-500 mr-2">y</span>
+                youtube
               </Button>
               <Button variant="outline" size="sm">
-                <span className="text-orange-500 mr-2">🎵</span>
-                Apple Music
+                <span className="text-orange-500 mr-2">a</span>
+                apple music
               </Button>
             </div>
           </div>

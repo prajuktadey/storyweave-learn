@@ -77,9 +77,9 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
   return (
     <div className="w-full max-w-4xl mx-auto p-6">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gradient mb-4">Upload Your Course Content</h2>
+        <h2 className="text-3xl font-bold text-gradient mb-4">upload your course content</h2>
         <p className="text-muted-foreground text-lg">
-          Transform your educational materials into captivating stories
+          transform your educational materials into captivating stories
         </p>
       </div>
 
@@ -92,7 +92,7 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
             className="rounded-md"
           >
             <Upload className="w-4 h-4 mr-2" />
-            Upload File
+            upload file
           </Button>
           <Button
             variant={uploadMode === 'text' ? 'default' : 'ghost'}
@@ -101,7 +101,7 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
             className="rounded-md"
           >
             <Type className="w-4 h-4 mr-2" />
-            Type Text
+            type text
           </Button>
         </div>
       </div>
@@ -123,9 +123,9 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
             </div>
             
             <div className="space-y-2">
-              <h3 className="text-xl font-semibold">Drop your course files here</h3>
+              <h3 className="text-xl font-semibold">drop your course files here</h3>
               <p className="text-muted-foreground">
-                Supports .txt, .md, .pdf, .docx files up to 10MB
+                supports .txt, .md, .pdf, .docx files up to 10mb
               </p>
             </div>
 
@@ -137,7 +137,7 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
                 disabled={isLoading}
               >
                 <Upload className="w-5 h-5 mr-2" />
-                {isLoading ? 'Processing...' : 'Choose Files'}
+                {isLoading ? 'processing...' : 'choose files'}
               </Button>
               
               <input
@@ -150,7 +150,7 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
             </div>
 
             <div className="text-xs text-muted-foreground">
-              We support text files, PDFs, and Word documents
+              we support text files, pdfs, and word documents
             </div>
           </div>
         </Card>
@@ -158,16 +158,16 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
         <Card className="card-gradient p-6 space-y-6">
           <div className="space-y-2">
             <Label htmlFor="text-input" className="text-lg font-semibold">
-              Paste or type your course content
+              paste or type your course content
             </Label>
             <p className="text-sm text-muted-foreground">
-              Add your educational content directly here
+              add your educational content directly here
             </p>
           </div>
           
           <Textarea
             id="text-input"
-            placeholder="Paste your course content, lecture notes, textbook chapters, or any educational material here..."
+            placeholder="paste your course content, lecture notes, textbook chapters, or any educational material here..."
             value={textInput}
             onChange={(e) => setTextInput(e.target.value)}
             className="min-h-[300px] resize-none bg-background/50 border-border focus:border-primary smooth-transition"
@@ -183,7 +183,7 @@ export const FileUpload = ({ onContentUpload, isLoading }: FileUploadProps) => {
               onClick={handleTextSubmit}
               disabled={!textInput.trim() || isLoading}
             >
-              {isLoading ? 'Processing...' : 'Transform to Story'}
+              {isLoading ? 'processing...' : 'transform to story'}
             </Button>
           </div>
         </Card>

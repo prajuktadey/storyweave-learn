@@ -10,74 +10,74 @@ interface GenreSelectorProps {
 const genres: Genre[] = [
   {
     id: 'fantasy',
-    name: 'Fantasy',
-    description: 'Epic quests with magical elements and mythical creatures',
+    name: 'fantasy',
+    description: 'epic quests with magical elements and mythical creatures',
     themes: ['magic', 'adventure', 'heroes', 'kingdoms'],
-    icon: '🗡️',
-    color: 'from-purple-600 to-indigo-600',
+    icon: '',
+    color: 'from-gray-600 to-black',
     mood: ['epic', 'mystical', 'orchestral']
   },
   {
     id: 'sci-fi',
-    name: 'Science Fiction',
-    description: 'Futuristic technology and space exploration adventures',
+    name: 'science fiction',
+    description: 'futuristic technology and space exploration adventures',
     themes: ['technology', 'space', 'innovation', 'future'],
-    icon: '🚀',
-    color: 'from-blue-600 to-cyan-600',
+    icon: '',
+    color: 'from-gray-600 to-black',
     mood: ['electronic', 'ambient', 'synthwave']
   },
   {
     id: 'mystery',
-    name: 'Mystery',
-    description: 'Intriguing puzzles and detective investigations',
+    name: 'mystery',
+    description: 'intriguing puzzles and detective investigations',
     themes: ['investigation', 'clues', 'secrets', 'revelation'],
-    icon: '🔍',
+    icon: '',
     color: 'from-gray-700 to-gray-900',
     mood: ['suspense', 'noir', 'atmospheric']
   },
   {
     id: 'romance',
-    name: 'Romance',
-    description: 'Heartwarming relationships and emotional connections',
+    name: 'romance',
+    description: 'heartwarming relationships and emotional connections',
     themes: ['love', 'relationships', 'emotion', 'connection'],
-    icon: '💕',
-    color: 'from-pink-500 to-rose-500',
+    icon: '',
+    color: 'from-gray-500 to-gray-700',
     mood: ['romantic', 'emotional', 'soft']
   },
   {
     id: 'adventure',
-    name: 'Adventure',
-    description: 'Thrilling journeys and exciting discoveries',
+    name: 'adventure',
+    description: 'thrilling journeys and exciting discoveries',
     themes: ['exploration', 'discovery', 'courage', 'journey'],
-    icon: '🏔️',
-    color: 'from-green-600 to-emerald-600',
+    icon: '',
+    color: 'from-gray-600 to-gray-800',
     mood: ['energetic', 'uplifting', 'adventurous']
   },
   {
     id: 'horror',
-    name: 'Horror',
-    description: 'Spine-chilling tales with supernatural elements',
+    name: 'horror',
+    description: 'spine-chilling tales with supernatural elements',
     themes: ['fear', 'supernatural', 'darkness', 'survival'],
-    icon: '👻',
-    color: 'from-red-800 to-black',
+    icon: '',
+    color: 'from-gray-800 to-black',
     mood: ['dark', 'eerie', 'tension']
   },
   {
     id: 'comedy',
-    name: 'Comedy',
-    description: 'Lighthearted and humorous storytelling',
+    name: 'comedy',
+    description: 'lighthearted and humorous storytelling',
     themes: ['humor', 'fun', 'wit', 'entertainment'],
-    icon: '😄',
-    color: 'from-yellow-400 to-orange-500',
+    icon: '',
+    color: 'from-gray-400 to-gray-600',
     mood: ['upbeat', 'cheerful', 'fun']
   },
   {
     id: 'historical',
-    name: 'Historical',
-    description: 'Stories set in fascinating periods of the past',
+    name: 'historical',
+    description: 'stories set in fascinating periods of the past',
     themes: ['history', 'culture', 'tradition', 'legacy'],
-    icon: '🏛️',
-    color: 'from-amber-600 to-yellow-700',
+    icon: '',
+    color: 'from-gray-600 to-gray-800',
     mood: ['classical', 'traditional', 'period']
   }
 ];
@@ -86,9 +86,9 @@ export const GenreSelector = ({ onGenreSelect, selectedGenre }: GenreSelectorPro
   return (
     <div className="w-full max-w-6xl mx-auto p-6">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gradient mb-4">Choose Your Story Genre</h2>
+        <h2 className="text-3xl font-bold text-gradient mb-4">choose your story genre</h2>
         <p className="text-muted-foreground text-lg">
-          Select a genre to transform your educational content into an engaging narrative
+          select a genre to transform your educational content into an engaging narrative
         </p>
       </div>
       
@@ -104,7 +104,7 @@ export const GenreSelector = ({ onGenreSelect, selectedGenre }: GenreSelectorPro
             onClick={() => onGenreSelect(genre)}
           >
             <div className="p-6 text-center space-y-4">
-              <div className="text-4xl mb-3">{genre.icon}</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="text-xl font-semibold text-foreground">{genre.name}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {genre.description}
@@ -122,7 +122,7 @@ export const GenreSelector = ({ onGenreSelect, selectedGenre }: GenreSelectorPro
               {selectedGenre?.id === genre.id && (
                 <div className="animate-fade-in">
                   <Button variant="glow" size="sm" className="w-full">
-                    Selected ✨
+                    selected
                   </Button>
                 </div>
               )}

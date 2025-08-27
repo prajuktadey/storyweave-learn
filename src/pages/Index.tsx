@@ -128,14 +128,12 @@ const Index = () => {
         <div className="text-center space-y-8 max-w-4xl mx-auto">
           {/* Hero Section */}
           <div className="space-y-6">
-            <div className="animate-float">
-              <div className="text-6xl mb-6">📚✨</div>
-            </div>
+            <div className="animate-float"></div>
             <h1 className="text-5xl md:text-6xl font-bold text-gradient">
-              Course to Story
+              course to story
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Transform your educational content into captivating stories with AI-generated soundtracks
+              transform your educational content into captivating stories with ai-generated soundtracks
             </p>
           </div>
 
@@ -143,25 +141,25 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
             <Card className="card-gradient p-6 text-center space-y-4 smooth-transition hover:scale-105">
               <BookOpen className="w-12 h-12 text-primary mx-auto" />
-              <h3 className="text-lg font-semibold">Upload Content</h3>
+              <h3 className="text-lg font-semibold">upload content</h3>
               <p className="text-sm text-muted-foreground">
-                Import course materials, PDFs, or type directly
+                import course materials, pdfs, or type directly
               </p>
             </Card>
             
             <Card className="card-gradient p-6 text-center space-y-4 smooth-transition hover:scale-105">
               <Sparkles className="w-12 h-12 text-accent mx-auto" />
-              <h3 className="text-lg font-semibold">Choose Genre</h3>
+              <h3 className="text-lg font-semibold">choose genre</h3>
               <p className="text-sm text-muted-foreground">
-                Transform into fantasy, sci-fi, mystery, and more
+                transform into fantasy, sci-fi, mystery, and more
               </p>
             </Card>
             
             <Card className="card-gradient p-6 text-center space-y-4 smooth-transition hover:scale-105">
               <Music className="w-12 h-12 text-secondary mx-auto" />
-              <h3 className="text-lg font-semibold">Get Soundtrack</h3>
+              <h3 className="text-lg font-semibold">get soundtrack</h3>
               <p className="text-sm text-muted-foreground">
-                Receive curated playlists for immersive reading
+                receive curated playlists for immersive reading
               </p>
             </Card>
           </div>
@@ -173,7 +171,7 @@ const Index = () => {
             onClick={() => setCurrentStep('upload')}
             className="animate-glow"
           >
-            Start Creating Your Story
+            start creating your story
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
         </div>
@@ -201,10 +199,10 @@ const Index = () => {
     return (
       <div className="min-h-screen flex flex-col justify-center items-center p-6">
         <div className="text-center space-y-8">
-          <div className="animate-spin text-6xl">✨</div>
-          <h2 className="text-3xl font-bold text-gradient">Crafting Your Story</h2>
+          <div className="animate-spin text-6xl">loading</div>
+          <h2 className="text-3xl font-bold text-gradient">crafting your story</h2>
           <p className="text-xl text-muted-foreground max-w-md">
-            Our AI is weaving your {selectedGenre?.name.toLowerCase()} tale with educational elements...
+            our ai is weaving your {selectedGenre?.name.toLowerCase()} tale with educational elements...
           </p>
           <div className="w-64 h-2 bg-muted rounded-full overflow-hidden mx-auto">
             <div className="h-full bg-gradient-primary animate-pulse"></div>
@@ -219,7 +217,7 @@ const Index = () => {
       <div className="min-h-screen py-12">
         <div className="mb-6 text-center">
           <Button variant="outline" onClick={resetApp} className="mr-4">
-            ← Start New Story
+            start new story
           </Button>
         </div>
         <StoryDisplay
@@ -237,10 +235,10 @@ const Index = () => {
       <div className="min-h-screen py-12">
         <div className="mb-6 text-center space-x-4">
           <Button variant="outline" onClick={resetApp}>
-            ← Start New Story
+            start new story
           </Button>
           <Button variant="ghost" onClick={() => setCurrentStep('story')}>
-            ← Back to Story
+            back to story
           </Button>
         </div>
         <PlaylistSuggestions

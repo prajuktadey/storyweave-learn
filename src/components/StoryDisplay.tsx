@@ -38,16 +38,16 @@ export const StoryDisplay = ({ story, onGeneratePlaylist, onExport, onShare }: S
       <div className="flex justify-center gap-3 flex-wrap">
         <Button variant="hero" onClick={onGeneratePlaylist}>
           <Music className="w-4 h-4 mr-2" />
-          Generate Playlist
+          generate playlist
         </Button>
         <Button variant="outline" onClick={onExport}>
           <Download className="w-4 h-4 mr-2" />
-          Export Story
-        </Button>
-        <Button variant="ghost" onClick={onShare}>
-          <Share2 className="w-4 h-4 mr-2" />
-          Share
-        </Button>
+            export story
+          </Button>
+          <Button variant="ghost" onClick={onShare}>
+            <Share2 className="w-4 h-4 mr-2" />
+            share
+          </Button>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -76,13 +76,13 @@ export const StoryDisplay = ({ story, onGeneratePlaylist, onExport, onShare }: S
         <div className="space-y-6">
           {/* Characters */}
           <Card className="card-gradient p-6">
-            <h3 className="text-lg font-semibold mb-4 text-gradient">Characters</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gradient">characters</h3>
             <div className="space-y-4">
               {story.characters.map((character, index) => (
                 <div key={index} className="space-y-2">
                   <h4 className="font-semibold text-foreground">{character.name}</h4>
                   <p className="text-sm text-muted-foreground">{character.role}</p>
-                  <p className="text-xs text-accent">Represents: {character.represents}</p>
+                  <p className="text-xs text-accent">represents: {character.represents}</p>
                   {index < story.characters.length - 1 && <Separator className="mt-3" />}
                 </div>
               ))}
@@ -91,7 +91,7 @@ export const StoryDisplay = ({ story, onGeneratePlaylist, onExport, onShare }: S
 
           {/* Educational Elements */}
           <Card className="card-gradient p-6">
-            <h3 className="text-lg font-semibold mb-4 text-gradient">Learning Elements</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gradient">learning elements</h3>
             <div className="flex flex-wrap gap-2">
               {story.educationalElements.map((element, index) => (
                 <Badge key={index} variant="secondary" className="text-xs">
@@ -103,22 +103,22 @@ export const StoryDisplay = ({ story, onGeneratePlaylist, onExport, onShare }: S
 
           {/* Story Stats */}
           <Card className="card-gradient p-6">
-            <h3 className="text-lg font-semibold mb-4 text-gradient">Story Stats</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gradient">story stats</h3>
             <div className="space-y-3 text-sm">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Word Count</span>
+                <span className="text-muted-foreground">word count</span>
                 <span className="font-medium">{story.content.split(' ').length}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Reading Time</span>
+                <span className="text-muted-foreground">reading time</span>
                 <span className="font-medium">{story.estimatedReadTime} min</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Genre</span>
+                <span className="text-muted-foreground">genre</span>
                 <span className="font-medium">{story.genre}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Characters</span>
+                <span className="text-muted-foreground">characters</span>
                 <span className="font-medium">{story.characters.length}</span>
               </div>
             </div>
