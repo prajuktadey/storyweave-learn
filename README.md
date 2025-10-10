@@ -15,30 +15,19 @@ And because every good story needs a soundtrack, you can also generate a **custo
 
 ## Key Features  
 
-**Genre Customization**  
-Study your topic as a fantasy saga, sci-fi odyssey, mystery case, or adventure epic.  
-
-**Narrative-Driven Learning**  
-Turns dry concepts into structured, emotionally engaging stories.  
-
-**Smart Story Conversion**  
-The app understands your content and reshapes it into plotlines that make sense.  
-
-**Dynamic Playlists**  
-Auto-generates a playlist that fits the story’s genre, pace, and emotional tone.  
-
-**Clean Aesthetics**  
-Minimal monochrome UI paired with Manrope typography — modern, calm, and distraction-free.  
-
-**Scalable Tech Stack**  
-Built with a reliable, future-ready architecture that keeps performance smooth.  
+1. **Genre Customization:** Study your topic as a fantasy saga, sci-fi odyssey, mystery case, or adventure epic.  
+2. **Narrative-Driven Learning:** Turns dry concepts into structured, emotionally engaging stories.  
+3. **Smart Story Conversion:** Understands your content and reshapes it into coherent, creative plotlines.  
+4. **Dynamic Playlists:** Automatically generates a playlist that matches the story’s tone, genre, and pacing.  
+5. **Clean Aesthetics:** Features a minimal monochrome interface paired with Manrope typography for a calm, focused learning space.  
+6. **Scalable Tech Stack:** Built on a modern, reliable architecture designed for smooth performance and scalability.  
 
 ## Use Cases  
 
-Students tired of reading the same lifeless material before every exam.  
-Independent learners who want their study sessions to feel more like Netflix episodes.  
-Educators who believe storytelling can make any topic unforgettable.  
-Anyone who wants to learn while vibing to a soundtrack that matches the lesson’s energy.  
+- Students tired of reading the same lifeless material before every exam.  
+- Independent learners who want their study sessions to feel more like Netflix episodes.  
+- Educators who believe storytelling can make any topic unforgettable.  
+- Anyone who wants to learn while vibing to a soundtrack that matches the lesson’s energy.  
 
 ## TL;DR  
 
