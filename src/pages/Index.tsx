@@ -46,9 +46,10 @@ const Index = () => {
           description: `Your ${genre.name.toLowerCase()} story is ready to read.`
         });
       } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : "Please try again with different content or genre.";
         toast({
           title: "Error generating story",
-          description: "Please try again with different content or genre.",
+          description: errorMessage,
           variant: "destructive"
         });
         setCurrentStep('genre');
