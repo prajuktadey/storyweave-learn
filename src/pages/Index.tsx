@@ -5,7 +5,7 @@ import { FileUpload } from "@/components/FileUpload";
 import { GenreSelector } from "@/components/GenreSelector";
 import { StoryDisplay } from "@/components/StoryDisplay";
 import { PlaylistSuggestions } from "@/components/PlaylistSuggestions";
-import { BookOpen, Music, Sparkles, ArrowRight } from "lucide-react";
+import { BookOpen, Music, Sparkles, ArrowRight, Info } from "lucide-react";
 import { ContentUpload, Genre, Story, Playlist, Track } from "@/types";
 import { generateStory } from "@/services/storyGenerator";
 import { generatePlaylist, shufflePlaylist } from "@/services/playlistGenerator";
@@ -147,7 +147,7 @@ const Index = () => {
                 import course materials, pdfs, or type directly
               </p>
             </Card>
-            
+
             <Card className="card-gradient p-6 text-center space-y-4 smooth-transition hover:scale-105">
               <Sparkles className="w-12 h-12 text-accent mx-auto" />
               <h3 className="text-lg font-semibold">choose genre</h3>
@@ -155,7 +155,7 @@ const Index = () => {
                 transform into fantasy, sci-fi, mystery, and more
               </p>
             </Card>
-            
+
             <Card className="card-gradient p-6 text-center space-y-4 smooth-transition hover:scale-105">
               <Music className="w-12 h-12 text-secondary mx-auto" />
               <h3 className="text-lg font-semibold">get soundtrack</h3>
@@ -165,10 +165,34 @@ const Index = () => {
             </Card>
           </div>
 
+          {/* About Section */}
+          <Card className="card-gradient p-8 text-left space-y-4 max-w-3xl mx-auto">
+            <div className="flex items-center gap-3 mb-4">
+              <Info className="w-8 h-8 text-primary" />
+              <h2 className="text-2xl font-semibold">about course to story</h2>
+            </div>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                learning doesn't have to be boring. course to story uses artificial intelligence to transform
+                dry educational materials into engaging narratives that make information stick.
+              </p>
+              <p>
+                whether you're a student looking to make studying more enjoyable, an educator seeking innovative
+                teaching methods, or a lifelong learner who loves stories, our platform bridges the gap between
+                education and entertainment.
+              </p>
+              <p>
+                simply upload your course content, choose your favorite story genre, and watch as ai crafts a
+                unique narrative that preserves all the key concepts while wrapping them in an immersive tale.
+                complete with a curated soundtrack to enhance your reading experience.
+              </p>
+            </div>
+          </Card>
+
           {/* CTA */}
-          <Button 
-            variant="hero" 
-            size="xl" 
+          <Button
+            variant="hero"
+            size="xl"
             onClick={() => setCurrentStep('upload')}
             className="animate-glow"
           >
